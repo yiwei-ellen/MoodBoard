@@ -1,8 +1,8 @@
 # Mood Board
-A CIS192 Final Project
+A CIS192 Final Project<br/>
 Author: Yiwei(Ellen) Yan
 
-###Project Goal
+### Project Goal
 The user can sign in, upload a facial expression picture, type in their generic mood color and a sentence of how they are feeling, on creating the post, model.h5 will predict the mood reflected by the uploaded picture and gpt-3 will generate a unique color code as output. Different mood cards are displayed on the main page. 
 
 
@@ -13,5 +13,5 @@ Files:
 
 Credits:
 * https://www.cis.upenn.edu/~cis192/ Arun Kirubarajan
-* https://www.kaggle.com/aayushmishra1512/emotion-detector/notebook AAYUSH MISHRA - for the model
+* (https://www.kaggle.com/aayushmishra1512/emotion-detector/notebook) AAYUSH MISHRA - for the model
 * openai
