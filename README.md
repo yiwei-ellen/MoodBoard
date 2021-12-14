@@ -6,6 +6,16 @@ Author: Yiwei(Ellen) Yan
 ## Project Goal
 The user can sign in, upload a facial expression picture, type in their generic mood color and a sentence of how they are feeling, on creating the post, model.h5 will predict the mood reflected by the uploaded picture and gpt-3 will generate a unique color code as output. Different mood cards are displayed on the main page. 
 
+## Instruction
+* unzip the file
+* run code
+```
+pip3 install -r requirements.txt
+python3 manage.py runserver
+```
+* You might get Google.auth incompatibility but the code should run just fine.
+* The database already has superuser admin, and normal users named: ellen, kyle, mama. Please do not register user under same names, will lead to error
+
 ## Code Structure
 - 'admin': access the admin page to the server
 - '/': the landing page where the user have the option to the login page and the signup page
