@@ -17,6 +17,7 @@ python3 manage.py runserver
 * The database already has superuser admin, and normal users named: ellen, kyle, mama. Please do not register user under same names, will lead to error
 * Do not worry about the ML model. The model is pretrained by author on Google Colab and loaded into the project's "/main" folder
 </br>
+
 ## Django Code Structure
 - 'admin': access the admin page to the server
 - '/': the landing page where the user have the option to the login page and the signup page
@@ -33,13 +34,16 @@ python3 manage.py runserver
   - function create_card in views.py used the trained model to predict the emotion on the card, the gpt-3 davinci engine takes in the generic color and the detected emotion to generate a better color code. 
   - after creating the code, the user will be redirected to the cards page where the special color code, the emotion, author and time of the card will be displayed
 </br>
+
 ## Comment
 It will be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag
 </br>
+
 ## Files: 
 * web_project: django project folder
 * emotion-detect.py: the python code which builds the emotion detection model in /web_project/main/model.h5
 </br>
+
 ## Credits:
 * https://www.cis.upenn.edu/~cis192/ Arun Kirubarajan
 * https://www.kaggle.com/aayushmishra1512/emotion-detector/notebook AAYUSH MISHRA - for the model
