@@ -33,10 +33,18 @@ python3 manage.py runserver
   - take in a picture, a generic color (red, yellow, green, blue, purple) and a sentence from the user
   - function create_card in views.py used the trained model to predict the emotion on the card, the gpt-3 davinci engine takes in the generic color and the detected emotion to generate a better color code. 
   - after creating the code, the user will be redirected to the cards page where the special color code, the emotion, author and time of the card will be displayed
+  - the user can click the color brick in the middle, click "show colors", choose the slider icon from top, pick RGB slider in the dropdown, and type in the generated HEX code to see what the output of GPT-3 is
 </br>
 
 ## Comment
-It will be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag
+* Things to improve: 
+  * It would be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag; can consider using javascript for filling in this functionality
+  * If the user try to access the /cards page and /cardnew page without logging in they see a blank page, but the routing does not take them back to root page.
+  * The model is only around 64% accurate when tested against the test data; the training dataset is also small with only 3000-4000 image per emotion. The pictures are zoomed in photos of faces and some training photos are irrelevant (casually found a random pic of warning sign somewhere in happy pictures) So the predictions of the model is not as oftenly correct, unfortunately. 
+* Some considerations during the project:
+  *  Tested out different models for the emotional detection dataset, e.g https://www.kaggle.com/odins0n/emotion-detection. However, the model stops at 24% accuracy during training in its first 5 epochs out of 30 so it does not seem correct. 
+  *  There is massive difference in the amount of training data available for the "fearful" emotion from the original dataset (around 1000 vs normally 3000-4000), so the author took out this emotion entirely in hope to see an improvement in model accuracy, which sadly did not happen. 
+  *  Built different user interface to be different from Arun's lecture demo and twitter project
 </br>
 
 ## Files: 
@@ -45,6 +53,7 @@ It will be really nice if individual cards can display the special generated col
 </br>
 
 ## Credits:
-* https://www.cis.upenn.edu/~cis192/ Arun Kirubarajan
+* https://www.cis.upenn.edu/~cis192/ Arun Kirubarajan - for this awesome semester of learning
 * https://www.kaggle.com/aayushmishra1512/emotion-detector/notebook AAYUSH MISHRA - for the model
+* https://www.youtube.com/watch?v=RvnpVJApBz8 Very Academy - for managing uploaded image files 
 * openai
