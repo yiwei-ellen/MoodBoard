@@ -1,12 +1,12 @@
 # Mood Board
-------
+
 A CIS192 Final Project<br/>
 Author: Yiwei(Ellen) Yan
 
 ### Project Goal
 The user can sign in, upload a facial expression picture, type in their generic mood color and a sentence of how they are feeling, on creating the post, model.h5 will predict the mood reflected by the uploaded picture and gpt-3 will generate a unique color code as output. Different mood cards are displayed on the main page. 
 
-### Code Structure
+## Code Structure
 - 'admin': access the admin page to the server
 - '/': the landing page where the user have the option to the login page and the signup page
 - 'login': user login page, can access the sign up page here, if logged in, redirects to '/feed'
@@ -22,7 +22,7 @@ The user can sign in, upload a facial expression picture, type in their generic 
   - function create_card in views.py used the trained model to predict the emotion on the card, the gpt-3 davinci engine takes in the generic color and the detected emotion to generate a better color code. 
   - after creating the code, the user will be redirected to the cards page where the special color code, the emotion, author and time of the card will be displayed
 
-#### Comment
+## Comment
 It will be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag
 
 #### Files: 
