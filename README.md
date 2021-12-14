@@ -26,7 +26,7 @@ The user can sign in, upload a facial expression picture, type in their generic 
 It will be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag
 
 ## Files: 
-web_project: a django project folder
+* web_project: django project folder
 * emotion-detect.py: the python code which builds the emotion detection model in /web_project/main/model.h5
 
 ## Credits:
