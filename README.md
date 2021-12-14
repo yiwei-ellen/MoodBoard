@@ -6,16 +6,23 @@ Author: Yiwei(Ellen) Yan
 ## Project Goal
 The user can sign in, upload a facial expression picture, type in their generic mood color and a sentence of how they are feeling, on creating the post, model.h5 will predict the mood reflected by the uploaded picture and gpt-3 will generate a unique color code as output. Different mood cards are displayed on the main page. 
 </br>
+
 ## Instruction
-* unzip the file
+* unzip the submission file
 * run code
 ```
+cd moodcard
 pip3 install -r requirements.txt
 python3 manage.py runserver
 ```
 * You might get Google.auth incompatibility but the code should run just fine.
 * The database already has superuser admin, and normal users named: ellen, kyle, mama. Please do not register user under same names, will lead to error
 * Do not worry about the ML model. The model is pretrained by author on Google Colab and loaded into the project's "/main" folder
+</br>
+
+## Submitted Files: 
+* moodcard: django project folder
+* emotion-detect.py: the python code which builds the emotion detection model in /web_project/main/model.h5
 </br>
 
 ## Django Code Structure
@@ -45,11 +52,6 @@ python3 manage.py runserver
   *  Tested out different models for the emotional detection dataset, e.g https://www.kaggle.com/odins0n/emotion-detection. However, the model stops at 24% accuracy during training in its first 5 epochs out of 30 so it does not seem correct. 
   *  There is massive difference in the amount of training data available for the "fearful" emotion from the original dataset (around 1000 vs normally 3000-4000), so the author took out this emotion entirely in hope to see an improvement in model accuracy, which sadly did not happen. 
   *  Built different user interface to be different from Arun's lecture demo and twitter project
-</br>
-
-## Files: 
-* web_project: django project folder
-* emotion-detect.py: the python code which builds the emotion detection model in /web_project/main/model.h5
 </br>
 
 ## Credits:
