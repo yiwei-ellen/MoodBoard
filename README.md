@@ -15,8 +15,9 @@ python3 manage.py runserver
 ```
 * You might get Google.auth incompatibility but the code should run just fine.
 * The database already has superuser admin, and normal users named: ellen, kyle, mama. Please do not register user under same names, will lead to error
+* Do not worry about the ML model. The model is pretrained by author on Google Colab and loaded into the project's "/main" folder
 
-## Code Structure
+## Django Code Structure
 - 'admin': access the admin page to the server
 - '/': the landing page where the user have the option to the login page and the signup page
 - 'login': user login page, can access the sign up page here, if logged in, redirects to '/feed'
