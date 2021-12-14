@@ -3,7 +3,7 @@
 A CIS192 Final Project<br/>
 Author: Yiwei(Ellen) Yan
 
-### Project Goal
+## Project Goal
 The user can sign in, upload a facial expression picture, type in their generic mood color and a sentence of how they are feeling, on creating the post, model.h5 will predict the mood reflected by the uploaded picture and gpt-3 will generate a unique color code as output. Different mood cards are displayed on the main page. 
 
 ## Code Structure
@@ -25,11 +25,11 @@ The user can sign in, upload a facial expression picture, type in their generic 
 ## Comment
 It will be really nice if individual cards can display the special generated color but with python+html only, it is challenging to pass in a variable into html tag
 
-#### Files: 
+## Files: 
 web_project: a django project folder
 * emotion-detect.py: the python code which builds the emotion detection model in /web_project/main/model.h5
 
-#### Credits:
+## Credits:
 * https://www.cis.upenn.edu/~cis192/ Arun Kirubarajan
 * https://www.kaggle.com/aayushmishra1512/emotion-detector/notebook AAYUSH MISHRA - for the model
 * openai
